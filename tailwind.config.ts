@@ -9,6 +9,9 @@ const config: Config = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    fontFamily: {
+			sans: ['Roboto', 'sans-serif']
+		},
     extend: {},
   },
   darkMode: "class",
