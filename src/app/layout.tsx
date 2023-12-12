@@ -20,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Providers>
           <Navbar />
-          {children}
+          <div className="mx-10 mb-6">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>
