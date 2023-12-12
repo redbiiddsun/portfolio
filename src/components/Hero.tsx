@@ -14,9 +14,9 @@ export default function Hero() {
             </div>
             <div className="text-center md:text-left">
                 <p className="text-[54px]"><b>Hi There!</b></p>
-                <p className="text-2xl">I'm Phanasorn Srisayam</p>
+                <p className="text-2xl">I&apos;m Phanasorn Srisayam</p>
                 <p className="text-2xl">A Software Developer</p>
-                <p className="pt-4">I am currently studying Computer Engineering at King Mongkut’s University of Technology Thonburi</p>
+                <p className="pt-4">I am currently studying Computer Engineering at King Mongkut&apos;s University of Technology Thonburi</p>
                 <div className="flex flex-row gap-3 mt-5 justify-center md:justify-start">
                     <Icon icon="vscode-icons:file-type-js-official" width="36" height="36" />
                     <Icon icon="vscode-icons:file-type-typescript-official" width="36" height="36" />
