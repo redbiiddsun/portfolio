@@ -1,8 +1,10 @@
 'use client'
 import React, { useState } from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import Image from "next/image";
 import { ThemeSwitch } from "./theme-switch";
+import { Icon } from "@iconify/react/dist/iconify.js";
+
 
 export default function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,16 +46,10 @@ export default function App() {
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
+                <NavbarItem className="lg:flex">
+                    <Icon icon="fa-brands:linkedin" color="#8d8d95" width="22" height="22" onClick={()=>{window.location.replace("https://www.linkedin.com/in/phanasorn-srisayam/")}} />
+                </NavbarItem>
                 <ThemeSwitch />
-                {/* <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
-                </NavbarItem> */}
-                {/* <NavbarItem>
-                    <Button as={Link} color="primary" href="#" variant="flat">
-                        Sign Up
-                    </Button>
-                </NavbarItem> */}
-
             </NavbarContent>
             <NavbarMenu>
                 {menuItems.map((item, index) => (
