@@ -16,7 +16,7 @@ export default function Hero() {
                 <p className="text-[54px]"><b>Hi There!</b></p>
                 <p className="text-2xl">I&apos;m Phanasorn Srisayam</p>
                 <p className="text-2xl">A Software Developer</p>
-                <p className="pt-4">I am currently studying Computer Engineering at King Mongkut&apos;s University of Technology Thonburi</p>
+                <p className="pt-4">I am currently studying Computer Engineering at King Mongkut&apos;s University of Technology Thonburi. And I have an 2 year experience in backend development</p>
                 <div className="flex flex-row gap-3 mt-5 justify-center md:justify-start">
                     <Icon icon="vscode-icons:file-type-js-official" width="36" height="36" />
                     <Icon icon="vscode-icons:file-type-typescript-official" width="36" height="36" />
