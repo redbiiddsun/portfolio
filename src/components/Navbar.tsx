@@ -11,7 +11,8 @@ export default function App() {
 
     const menuItems = [
         "Home",
-        "Experience",
+        "Works",
+        "Contact",
         "Github",
     ];
 
@@ -35,13 +36,13 @@ export default function App() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
-                    <Link href="#" aria-current="page">
+                    <Link href="/works" aria-current="page">
                         {menuItems[1]}
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
                    <a href="https://github.com/redbiiddsun" target="_blank">
-                        {menuItems[2]}
+                        {menuItems[3]}
                     </a>
                 </NavbarItem>
             </NavbarContent>
