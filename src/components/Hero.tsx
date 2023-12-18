@@ -3,8 +3,11 @@ import React from "react";
 import { Icon } from '@iconify/react';
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+
+  const router = useRouter();
   return (
     <>
       <section className="flex flex-col max-w-[800px] mt-10 w-full mx-auto text-center">
@@ -28,8 +31,8 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-row mt-6 gap-3">
                     <div className="w-60">
-                    <Button color="default" fullWidth>
-                        Experiences
+                    <Button color="default" onClick={() => router.push('/works')} fullWidth>
+                        Works
                     </Button>
                     </div>
                     <div className="w-60"><Button color="default" fullWidth>
