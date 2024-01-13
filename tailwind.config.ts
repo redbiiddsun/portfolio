@@ -12,7 +12,16 @@ const config: Config = {
     fontFamily: {
 			sans: ['Roboto', 'sans-serif']
 		},
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        "auto-fill": "repeat(auto-fill, minmax(210px, 1fr))",
+        auto: "auto"
+    },
+    gridTemplateRows: {
+        "auto-fill": "repeat(auto-fill, minmax(250px, 1fr))",
+        auto: "auto"
+    },
+    },
   },
   darkMode: "class",
   plugins: [nextui()]
