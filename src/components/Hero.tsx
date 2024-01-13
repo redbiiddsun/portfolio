@@ -13,7 +13,7 @@ export default function Hero() {
       <section className="flex flex-col max-w-[800px] mt-10 w-full mx-auto text-center">
         <div className="flex flex-col md:flex-row gap-6">
             <div className="">
-                <Image alt="logo" src={"/greating.png"} width={300} height={300}></Image> 
+                <Image alt="logo" src={"/greating.png"} width={500} height={500}></Image> 
             </div>
             <div className="text-center md:text-left">
                 <p className="text-[54px]"><b>Hi There!</b></p>
