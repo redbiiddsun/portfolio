@@ -10,10 +10,10 @@ export default function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const menuItems = [
-        "Home",
-        "Works",
-        "Contact",
-        "Github",
+        {title: "Home", link: "/"},
+        {title: "Works", link: "/works"},
+        {title: "Contact", link: "/"},
+        {title: "Github", link: "https://github.com/redbiiddsun"},
     ];
 
     return (
@@ -32,17 +32,18 @@ export default function App() {
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
                     <Link color="foreground" href="/">
-                        {menuItems[0]}
+                        {menuItems[0].title}
                     </Link>
                 </NavbarItem>
+                
                 <NavbarItem isActive>
                     <Link href="/works" aria-current="page">
-                        {menuItems[1]}
+                        {menuItems[1].title}
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
                    <a href="https://github.com/redbiiddsun" target="_blank">
-                        {menuItems[3]}
+                        {menuItems[3].title}
                     </a>
                 </NavbarItem>
             </NavbarContent>
@@ -60,10 +61,10 @@ export default function App() {
                                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
                             }
                             className="w-full"
-                            href="#"
+                            href={item.link}
                             size="lg"
                         >
-                            {item}
+                            {item.title}
                         </Link>
                     </NavbarMenuItem>
                 ))}
